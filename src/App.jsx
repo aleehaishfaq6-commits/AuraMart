@@ -17,7 +17,7 @@ function App() {
     <>
      <div className='container'>
       <CartState>
-      <Router>
+      <HashRouter>
       <Navbar/>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
@@ -30,7 +30,7 @@ function App() {
       </Routes>
 
       <Footer/>
-      </Router>
+      </HashRouter>
         </CartState>
      </div>
     </>
