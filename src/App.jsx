@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 import Categoryshow from './components/Categoryshow'
 import DetailsPage from './components/DetailsPage'
 import { useContext } from 'react'
-import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import './App.css'
 import CartState from './contextApi/cart/cartState'
 import Cart from './components/Cart'
@@ -17,7 +17,7 @@ function App() {
     <>
      <div className='container'>
       <CartState>
-      <BrowserRouter>
+      <Router>
       <Navbar/>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
@@ -30,7 +30,7 @@ function App() {
       </Routes>
 
       <Footer/>
-      </BrowserRouter>
+      </Router>
         </CartState>
      </div>
     </>
