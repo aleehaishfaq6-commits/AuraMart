@@ -32,7 +32,7 @@ const Shop = () => {
       try {
         setloading(true);
 
-        const data = await fetch("/api/products");
+        const data = await fetch("/https://dummyjson.com/products");
 
         if (!data.ok) {
           throw new Error(`Products Error: ${data.status}`);
@@ -68,7 +68,7 @@ const Shop = () => {
   useEffect(() => {
     const fetchcategory = async () => {
       try {
-        const data = await fetch("/api/products/categories");
+        const data = await fetch("/https://dummyjson.com/products/categories");
 
         if (!data.ok) {
           throw new Error(`Categories Error: ${data.status}`);

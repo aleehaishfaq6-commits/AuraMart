@@ -23,7 +23,8 @@ const Categoryshow = () => {
         }
         const fetchcategory = async () => {
             try {
-                let url = `/api/products/category/${cleanedCatName}`;
+                let url = `{
+                     https://dummyjson.com/products/category/${cleanedCatName}`;
                 let response = await fetch(url);
                 let data = await response.json()
                 setloading(false)

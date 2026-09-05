@@ -17,7 +17,7 @@ const DetailsPage =()=>{
     setloading(true)
     let fetchbyid=async()=>{
     // let url =`https://dummyjson.com/products/${id}`
-    let response = await fetch(`/api/products/${id}`);
+    let response = await fetch(`/https://dummyjson.com/products/${id}`);
     setloading(false)
     let data = await response.json()
     setproducts(data)
@@ -31,7 +31,7 @@ const DetailsPage =()=>{
      if (!products?.category)
         return;
       setloading(true)
-    let url = `/api/products/category/${products.category}`
+    let url = `/https://dummyjson.com/products/category/${products.category}`
     let response = await fetch(url);
     setloading(false)
     let data = await response.json();

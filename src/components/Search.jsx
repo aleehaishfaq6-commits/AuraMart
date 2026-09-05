@@ -17,7 +17,7 @@ const Search = () => {
             return;
         }
         try {
-            let url = `/api/products/search?q=${encodeURIComponent(fword)}`
+            let url = `/https://dummyjson.com/products/search?q=${encodeURIComponent(fword)}`
             let data = await fetch(url);
             setloading(false)
             console.log('fetching fword:', fword)
