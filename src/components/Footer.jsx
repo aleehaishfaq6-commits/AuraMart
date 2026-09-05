@@ -65,13 +65,15 @@ const Footer =()=>{
     </div>
     <div className="footer-divider"></div>
     <div className="footer-bottom">
-
-         <p className="copyright-text">
-         &copy; 2026 AuraMart. All rights reserved.
-       <span className="footer-credit">
-      Designed & Developed by <strong>Aleeha Ishfaq</strong>
-     </span>
-       </p>
+    <p className="copyright-text"> &copy; 2026 AuraMart. All rights reserved.</p>
+        <a
+         href="https://github.com/aleehaishfaq6-commits/AuraMart"
+       target="_blank"
+        rel="noopener noreferrer"
+        className="developer-watermark"
+        >
+       Designed & Developed by <strong>Aleeha Ishfaq</strong>
+           </a>
 
 
       
